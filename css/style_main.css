@@ -8,6 +8,7 @@
 
 body{
 	background-color: #272727;	
+	overflow-x: hidden;
 }
 
 
@@ -31,47 +32,39 @@ header {grid-area: header;}
 
 .brand1 {
 	grid-area: brand1; 
-	border-top:2px solid #d9d9d9;
+	border-top:2px solid rgba(217,217,217,1);
 }
 
 .brand2 {
 	grid-area: brand2;
-	border-top:2px solid #d9d9d9;
+	border-top:2px solid rgba(217,217,217,1);
 }
 
 .brand3 {
 	grid-area: brand3;
-	border-top:2px solid #d9d9d9;
+	border-top:2px solid rgba(217,217,217,1);
+	border-bottom: 2px solid rgba(217,217,217,1);
 	}
 
-footer {
-	grid-area: footer;
-	border-top: 2px solid #d9d9d9;
-}
-
+footer {grid-area: footer;}
 
 
 header{ 
-	background-color: #272727;
-	color:#d9d9d9;
+	background-color: rgba(39,39,39,1);
+	color:rgba(217,217,217,1);
 	text-align: center;
 	padding:25px;
 	font-family: 'Playfair Display', serif;
 	font-size: 35px;
-	letter-spacing: 5px;
+	letter-spacing: 6px;
 	display: flex;
 	justify-content: space-between;
 	align-items:center;
 
 }
 
-header > a{
-	text-decoration: none;
-	color:#d9d9d9;
-}
-
 .cart{
-	background-color: #272727;
+	background-color: rgba(39,39,39,1);
 	position: absolute;
 	left:0;
 	top:-100vh;
@@ -114,13 +107,14 @@ nav ul{
 nav ul li{
 	margin: 20px;
 }
-nav ul a{
-	color:#d9d9d9;
+
+ a{
+	color:rgba(217,217,217,1);
 	text-decoration: none;
 }
 
-nav ul a:hover{
-	color:#4A4B4B;
+a:hover{
+	color:rgba(74,75,75,1);
 }
 
 
@@ -137,19 +131,18 @@ nav ul a:hover{
 	position: relative;
 	height:2px;
 	width: 30px;
-	background-color:#d9d9d9;
+	background-color:rgba(217,217,217,1);
 	display: block;
 }
 
 .menu{
-
 	position: absolute;
 	top:0;
 	margin-top: 100px;
 	right:-100vw;
 	width:100vw;
 	height:100vh;
-	background-color: #272727;
+	background-color: rgba(39,39,39,1);
 	z-index: 10;
 	font-size: 20px;
 	transition: right 0.8s;
@@ -165,9 +158,6 @@ input[id="toggle"]:checked ~  .menu{right: 0;}
 
 input[id="cartbutton"]:checked ~ .cart{top: 0;}
 
-
-
-
 input[id="toggle"]:checked ~ .nav-toggle span:nth-child(1){
 	transform:rotate(45deg);
 	background-color: rgba(255,255,255,1);
@@ -180,18 +170,12 @@ input[id="toggle"]:checked ~ .nav-toggle span:nth-child(2){
 }
 
 
+/*IMG FRONTPAGE*/
 
-[class*="brand"]{
-	font-size: 40px;
-}
-
+[class*="brand"]{ font-size: 40px;}
 
 
-.brand1{
-	position: relative;
-}
-
-
+.brand1{position: relative;}
 
 .brand1::before{
 	background-image: url(https://media.endclothing.com/media/f_auto,q_auto:eco/prodmedia/media/catalog/product/2/9/29-08-2019_aesop_classicconditioner_200ml_ahr23_tc_1_1.jpg);
@@ -211,16 +195,12 @@ input[id="toggle"]:checked ~ .nav-toggle span:nth-child(2){
 .brand1 h3{
 	font-size: 40px;
 	margin-top: 150px;
-	/*margin-bottom: -200px;*/
 	margin-left: 10px;
-	color:#d9d9d9;
+	color:rgba(217,217,217,1);
 	z-index: 30;
 }
 
-.brand2{
-position: relative;
-	
-}
+.brand2{position: relative;	}
 
 .brand2::before{
 	background-image: url(../img/byredo6.jpeg);
@@ -237,9 +217,7 @@ position: relative;
 	opacity: 0.5;
 }
 
-.brand3{
-	position: relative;
-}
+.brand3{position: relative;}
 
 .brand3::before{
 	background-image: url(../img/labruketmood.jpeg);
@@ -258,37 +236,72 @@ position: relative;
 
 [class*="lable"]{
 	background-color: rgba(217,217,217,0.4);
-	color:black;
 	padding:15px;
+	position: absolute;
+	bottom: 10vh;
+
 }
+
+[class*="lable"] a {
+	color: rgba(0,0,0,1);
+}
+
 
 [class*="lable"]:hover{
 	background-color: rgba(217,217,217,0.6);
 
 }
 
-.lable_aeseop {
-	margin-left:auto;
-	width:200px;
-	/*margin-top: 70%;*/
+[class*="lable"] img{
+	width:150px;
+	margin:10px;
+
 }
 
 
+.lable_aeseop {
+	right:0;
+	width:200px;
+}
 
 .lable_bruket{
-	margin-left:auto;
 	width:300px;
-	/*margin-top: 70%;*/
 }
 
 .lable_byredo{
 	width:250px;
-	/*margin-top: 70%;*/
+	right:0;
 }
 
 footer{
-	background-color: #272727;
+	background-color: rgba(39,39,39,1);
+	color:rgba(217,217,217,1);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	align-items:center;
+	font-size: 20px;
+	font-family: 'Playfair Display', serif;
 }
+
+.contact h4{
+	font-size: 30px;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+}
+
+.contact{
+	text-align: center;
+	margin:10px;
+	width:300px;
+	
+}
+
+.contact p{font-size: 19px;}
+
+.social > a {margin:10px;}
+
 
 
 /*Iphone x*/
@@ -313,12 +326,14 @@ footer{
 
 
 
+/* IPAD*/
+
 @media only screen and (max-width: 959px) and (min-width: 768px) {
 
 	.main_container{
 		width: 100vw;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: 100px 50vh 45vh 250px;
+		grid-template-rows: 100px 37vh 30vh 250px;
 		grid-template-areas:
 			"header header"
 			"brand1 brand2"
@@ -326,25 +341,21 @@ footer{
 			"footer footer";
 	}
 
-	.lable_byredo{
-		margin-left: auto;
-		
-	}
-
-	.lable_bruket{
-		margin-left:0;
+	.lable_aeseop{left:0;}
 	
-	}
 
-	.brand1{
-		border-right:2px solid #d9d9d9;
-	}
+	.lable_byredo{right:0;}
 
-	.brand3::before {
-	background-image: url(../img/labruket5.jpeg);
+	.lable_bruket{left:0;}
+
+	.brand1{border-right:2px solid rgba(217,217,217,1);}
+
+	.brand3::before{background-image: url(../img/labruket5.jpeg);}
+
 }
 
-}
+
+/* SMALL SCREENS */
 
 @media only screen and (max-width: 1199px) and (min-width: 960px) {
 
@@ -360,48 +371,26 @@ footer{
 		}
 
 
-	.brand1{
-		border-right:2px solid #d9d9d9;
-	}
+		.brand1{border-right:2px solid rgba(217,217,217,1);}
 
-	.lable_aeseop {
-		margin-left:0;
-		/*margin-top: 255px;*/
-	}
+		.lable_aeseop {left:0;}
 
-	.lable_byredo{
-		margin-left:auto;
-		/*margin-top: 550px;*/
-	}
+		.lable_byredo{margin-left:auto;}
 
-	.lable_bruket {
-		margin-left:0;
-		/*margin-top:350px;*/
-	}
+		.lable_bruket {margin-left:0;}
 
-
-	.brand3::before {
-	background-image: url(../img/labruket5.jpeg);
-	}
+		.brand3::before {background-image: url(../img/labruket5.jpeg);}
 
 
 		header{
 			justify-content: space-between;
 			padding: 5px 25px 10px 25px;
 			display: flex;
-
 		}
 
+		header > a{order:0;}
 
-
-		header > a{
-			order:0;
-			
-		}
-
-		#shoppingc{
-			order:2;
-		}
+		#shoppingc{order:2;}
 		
 			
 		nav ul{
@@ -414,62 +403,85 @@ footer{
 
 		}
 
-		nav ul li{
-			margin:0;
-
-		}
-		nav ul a{
-			color:#d9d9d9;
-			text-decoration: none;
-		}
-
-		nav ul a:hover{
-			color:#4A4B4B;
-		}
+		nav ul li{margin:0;}
 
 
-		/*MENU*/ 
-		.nav-toggle{
-			display: none;
-		
-		}
+		/*MENU FOR LAPTOP*/ 
 
-		.nav-toggle span{
-			display: none;
+		.nav-toggle{display: none;}
 
-		}
+		.nav-toggle span{display: none;}
 
 		.menu{
 			order:1;
 			background-color: rgba(255, 255, 255, 0);
-			width: 50%;
+			width: 70%;
 			position: static;		
 			height:100px;	
 
 		}
 
-
-	
-
-
 }
 
 @media only screen and (max-width: 1299px) and (min-width: 1200px) {
 
-	.main_container{
-			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: 100px 70vh 70vh 250px;
-			grid-template-areas:
-				"header header"
-				"brand1 brand2"
-				"brand3 brand3"
-				"footer footer";
+		.main_container{
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: 100px 70vh 70vh 250px;
+				grid-template-areas:
+					"header header"
+					"brand1 brand2"
+					"brand3 brand3"
+					"footer footer";
 		}
 
+		.lable_aeseop {left:0;}
 
-.brand3::before {
-	background-image: url(../img/labruket5.jpeg);
-	}
+		.lable_byredo{margin-left:auto;}
+
+		.lable_bruket {margin-left:0;}
+
+		.brand3::before {background-image: url(../img/labruket5.jpeg);}
+
+	
+		header{
+			justify-content: space-between;
+			padding: 5px 25px 10px 25px;
+			display: flex;
+		}
+
+		header > a{order:0;}
+
+		#shoppingc{order:2;}
+		
+			
+		nav ul{
+			list-style-type: none;
+			margin:0;
+			padding-bottom: 10px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+
+		}
+
+		nav ul li{margin:0;}
+
+	
+
+		/*MENU*/ 
+		.nav-toggle{display: none;}
+
+		.nav-toggle span{display: none;}
+
+		.menu{
+			order:1;
+			background-color: rgba(255, 255, 255, 0);
+			width: 70%;
+			position: static;		
+			height:100px;	
+
+		}
 
 
 }
@@ -485,10 +497,52 @@ footer{
 				"footer footer";
 		}
 
+		.lable_aeseop {
+			left:0;
+			width:50%;
+		}
 
-.brand3::before {
-	background-image: url(../img/labruket5.jpeg);
-	}
+		.lable_byredo{width: 50%;}
+
+		.lable_bruket {width:50%;}
+
+		.brand3::before {background-image: url(../img/labruket5.jpeg);}
+
+		header{
+			justify-content: space-between;
+			padding: 5px 25px 10px 25px;
+			display: flex;
+		}
+
+		header > a{order:0;}
+
+		#shoppingc{order:2;}
+		
+		nav ul{
+			list-style-type: none;
+			margin:0;
+			padding-bottom: 10px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+
+		nav ul li{margin:0 30px 0 30px;}
+
+		
+		/*MENU*/ 
+		.nav-toggle{display: none;}
+
+		.nav-toggle span{display: none;}
+
+		.menu{
+			order:1;
+			background-color: rgba(255, 255, 255, 0);
+			width: 70%;
+			position: static;		
+			height:100px;	
+
+		}
 
 
 }
