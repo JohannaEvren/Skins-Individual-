@@ -350,7 +350,7 @@ footer{
 
 	.brand1{border-right:2px solid rgba(217,217,217,1);}
 
-	.brand3::before{background-image: url(../img/labruket5.jpeg);}
+	.brand3::before{background-image: url(../img/labruket.jpg);}
 
 }
 
@@ -379,7 +379,7 @@ footer{
 
 		.lable_bruket {margin-left:0;}
 
-		.brand3::before {background-image: url(../img/labruket5.jpeg);}
+		.brand3::before {background-image: url(../img/labruket.jpg);}
 
 
 		header{
@@ -441,7 +441,7 @@ footer{
 
 		.lable_bruket {margin-left:0;}
 
-		.brand3::before {background-image: url(../img/labruket5.jpeg);}
+		.brand3::before {background-image: url(../img/labruket.jpg);}
 
 	
 		header{
@@ -506,7 +506,7 @@ footer{
 
 		.lable_bruket {width:50%;}
 
-		.brand3::before {background-image: url(../img/labruket5.jpeg);}
+		.brand3::before {background-image: url(../img/labruket.jpg);}
 
 		header{
 			justify-content: space-between;
