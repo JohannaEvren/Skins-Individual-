@@ -220,7 +220,7 @@ input[id="toggle"]:checked ~ .nav-toggle span:nth-child(2){
 .brand3{position: relative;}
 
 .brand3::before{
-	background-image: url(../img/labruketmood.jpeg);
+	background-image: url(../img/Labruketmood.jpeg);
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	content:"";
@@ -350,7 +350,7 @@ footer{
 
 	.brand1{border-right:2px solid rgba(217,217,217,1);}
 
-	.brand3::before{background-image: url(../img/labruket.jpg);}
+	.brand3::before{background-image: url(../img/Labruket.jpg);}
 
 }
 
@@ -379,7 +379,7 @@ footer{
 
 		.lable_bruket {margin-left:0;}
 
-		.brand3::before {background-image: url(../img/labruket.jpg);}
+		.brand3::before {background-image: url(../img/Labruket.jpg);}
 
 
 		header{
@@ -441,7 +441,7 @@ footer{
 
 		.lable_bruket {margin-left:0;}
 
-		.brand3::before {background-image: url(../img/labruket.jpg);}
+		.brand3::before {background-image: url(../img/Labruket.jpg);}
 
 	
 		header{
@@ -506,7 +506,7 @@ footer{
 
 		.lable_bruket {width:50%;}
 
-		.brand3::before {background-image: url(../img/labruket.jpg);}
+		.brand3::before {background-image: url(../img/Labruket.jpg);}
 
 		header{
 			justify-content: space-between;
