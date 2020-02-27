@@ -44,7 +44,7 @@ header {grid-area: header;}
 	grid-area: brand3;
 	border-top:2px solid rgba(217,217,217,1);
 	border-bottom: 2px solid rgba(217,217,217,1);
-	}
+}
 
 footer {grid-area: footer;}
 
@@ -104,18 +104,14 @@ nav ul{
 	margin:100px;
 }
 
-nav ul li{
-	margin: 20px;
-}
+nav ul li{margin: 20px;}
 
- a{
+a{
 	color:rgba(217,217,217,1);
 	text-decoration: none;
 }
 
-a:hover{
-	color:rgba(74,75,75,1);
-}
+a:hover{color:rgba(74,75,75,1);}
 
 
 /*MENU*/ 
@@ -239,8 +235,8 @@ input[id="toggle"]:checked ~ .nav-toggle span:nth-child(2){
 	padding:15px;
 	position: absolute;
 	bottom: 10vh;
-
 }
+
 
 [class*="lable"] a {
 	color: rgba(0,0,0,1);
@@ -264,9 +260,7 @@ input[id="toggle"]:checked ~ .nav-toggle span:nth-child(2){
 	width:200px;
 }
 
-.lable_bruket{
-	width:300px;
-}
+.lable_bruket{width:300px;}
 
 .lable_byredo{
 	width:250px;
@@ -355,7 +349,61 @@ footer{
 }
 
 
-/* SMALL SCREENS */
+/* CHANGES FOR ALL DESKTOP SIZES */ 
+
+@media only screen and (min-width: 959px){
+
+
+		.lable_aeseop {left:0;}
+
+		.lable_byredo{margin-left:auto;}
+
+		.lable_bruket {margin-left:0;}
+
+		.brand3::before {background-image: url(../img/Labruket.jpg);}
+
+		header{
+			justify-content: space-between;
+			padding: 5px 25px 10px 25px;
+			display: flex;
+		}
+
+		header > a{order:0;}
+
+		#shoppingc{order:2;}
+		
+		
+		/*MENU FOR LAPTOP*/
+			
+		nav ul{
+			list-style-type: none;
+			margin:0;
+			padding-bottom: 10px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+
+		}
+
+		nav ul li{margin:0;} 
+
+		.nav-toggle{display: none;}
+
+		.nav-toggle span{display: none;}
+
+		.menu{
+			order:1;
+			background-color: rgba(255, 255, 255, 0);
+			width: 70%;
+			position: static;		
+			height:100px;	
+
+		}
+
+
+
+}
+
 
 @media only screen and (max-width: 1199px) and (min-width: 960px) {
 
@@ -369,59 +417,9 @@ footer{
 				"brand3 brand3"
 				"footer footer";
 		}
-
-
-		.brand1{border-right:2px solid rgba(217,217,217,1);}
-
-		.lable_aeseop {left:0;}
-
-		.lable_byredo{margin-left:auto;}
-
-		.lable_bruket {margin-left:0;}
-
-		.brand3::before {background-image: url(../img/Labruket.jpg);}
-
-
-		header{
-			justify-content: space-between;
-			padding: 5px 25px 10px 25px;
-			display: flex;
-		}
-
-		header > a{order:0;}
-
-		#shoppingc{order:2;}
-		
-			
-		nav ul{
-			list-style-type: none;
-			margin:0;
-			padding-bottom: 10px;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-
-		}
-
-		nav ul li{margin:0;}
-
-
-		/*MENU FOR LAPTOP*/ 
-
-		.nav-toggle{display: none;}
-
-		.nav-toggle span{display: none;}
-
-		.menu{
-			order:1;
-			background-color: rgba(255, 255, 255, 0);
-			width: 70%;
-			position: static;		
-			height:100px;	
-
-		}
-
 }
+
+
 
 @media only screen and (max-width: 1299px) and (min-width: 1200px) {
 
@@ -435,55 +433,6 @@ footer{
 					"footer footer";
 		}
 
-		.lable_aeseop {left:0;}
-
-		.lable_byredo{margin-left:auto;}
-
-		.lable_bruket {margin-left:0;}
-
-		.brand3::before {background-image: url(../img/Labruket.jpg);}
-
-	
-		header{
-			justify-content: space-between;
-			padding: 5px 25px 10px 25px;
-			display: flex;
-		}
-
-		header > a{order:0;}
-
-		#shoppingc{order:2;}
-		
-			
-		nav ul{
-			list-style-type: none;
-			margin:0;
-			padding-bottom: 10px;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-
-		}
-
-		nav ul li{margin:0;}
-
-	
-
-		/*MENU*/ 
-		.nav-toggle{display: none;}
-
-		.nav-toggle span{display: none;}
-
-		.menu{
-			order:1;
-			background-color: rgba(255, 255, 255, 0);
-			width: 70%;
-			position: static;		
-			height:100px;	
-
-		}
-
-
 }
 
 @media only screen and (min-width: 1300px){
@@ -496,54 +445,6 @@ footer{
 				"brand3 brand3"
 				"footer footer";
 		}
-
-		.lable_aeseop {
-			left:0;
-			width:50%;
-		}
-
-		.lable_byredo{width: 50%;}
-
-		.lable_bruket {width:50%;}
-
-		.brand3::before {background-image: url(../img/Labruket.jpg);}
-
-		header{
-			justify-content: space-between;
-			padding: 5px 25px 10px 25px;
-			display: flex;
-		}
-
-		header > a{order:0;}
-
-		#shoppingc{order:2;}
-		
-		nav ul{
-			list-style-type: none;
-			margin:0;
-			padding-bottom: 10px;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-		}
-
-		nav ul li{margin:0 30px 0 30px;}
-
-		
-		/*MENU*/ 
-		.nav-toggle{display: none;}
-
-		.nav-toggle span{display: none;}
-
-		.menu{
-			order:1;
-			background-color: rgba(255, 255, 255, 0);
-			width: 70%;
-			position: static;		
-			height:100px;	
-
-		}
-
 
 }
 
